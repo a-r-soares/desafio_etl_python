@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "nome": "Cliente 1",
+    "status_atual": "Churn",
+    "dias_sem_transacao": 83,
+    "reclamacoes_ultimo_mes": 1,
+    "saldo_medio": 0,
+    "analise_ia": "Cliente inativo/Churn."
+  },
+  {
+    "id": 2,
+    "nome": "Cliente 2",
+    "status_atual": "Churn",
+    "dias_sem_transacao": 48,
+    "reclamacoes_ultimo_mes": 5,
+    "saldo_medio": 0,
+    "analise_ia": "Cliente inativo/Churn."
+  },
+  {
+    "id": 3,
+    "nome": "Cliente 3",
+    "status_atual": "Churn",
+    "dias_sem_transacao": 34,
+    "reclamacoes_ultimo_mes": 2,
+    "saldo_medio": 0,
+    "analise_ia": "Cliente inativo/Churn."
+  },
+  {
+    "id": 4,
+    "nome": "Cliente 4",
+    "status_atual": "Churn",
+    "dias_sem_transacao": 67,
+    "reclamacoes_ultimo_mes": 4,
+    "saldo_medio": 0,
+    "analise_ia": "Cliente inativo/Churn."
+  },
+  {
+    "id": 5,
+    "nome": "Cliente 5",
+    "status_atual": "Churn",
+    "dias_sem_transacao": 60,
+    "reclamacoes_ultimo_mes": 5,
+    "saldo_medio": 0,
+    "analise_ia": "Cliente inativo/Churn."
+  },
+  {
+    "id": 6,
+    "nome": "Cliente 6",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 26,
+    "reclamacoes_ultimo_mes": 3,
+    "saldo_medio": 120.19949771481289,
+    "analise_ia": "'Olá Cliente 6, notamos sua ausência. Descontos exclusivos aguardam você! Fale conosco.'"
+  },
+  {
+    "id": 7,
+    "nome": "Cliente 7",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 23,
+    "reclamacoes_ultimo_mes": 1,
+    "saldo_medio": 754.9739442154122,
+    "analise_ia": "Prezado Cliente 7, sentimos sua falta! Oferecemos condição especial para você voltar. Contate-nos."
+  },
+  {
+    "id": 8,
+    "nome": "Cliente 8",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 16,
+    "reclamacoes_ultimo_mes": 3,
+    "saldo_medio": 235.89936948427678,
+    "analise_ia": "Prezado Cliente 8, sentimos sua falta! Conte-nos como podemos te ajudar a ter a melhor experiência. Ligue já."
+  },
+  {
+    "id": 9,
+    "nome": "Cliente 9",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 25,
+    "reclamacoes_ultimo_mes": 2,
+    "saldo_medio": 778.7879501338892,
+    "analise_ia": "Prezado Cliente 9, percebemos sua ausência. Sua satisfação é nossa prioridade. Gostaríamos de conversar."
+  },
+  {
+    "id": 10,
+    "nome": "Cliente 10",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 29,
+    "reclamacoes_ultimo_mes": 2,
+    "saldo_medio": 910.0490263143578,
+    "analise_ia": "Prezado Cliente 10, notamos sua ausência. Valorizamos você. Entre em contato para ajudarmos a resolver suas preocupações e melhorar sua experiência."
+  },
+  {
+    "id": 11,
+    "nome": "Cliente 11",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 26,
+    "reclamacoes_ultimo_mes": 1,
+    "saldo_medio": 919.1816804085137,
+    "analise_ia": "Cliente 11, notamos sua ausência. Queremos reter você! Qual sua necessidade?"
+  },
+  {
+    "id": 12,
+    "nome": "Cliente 12",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 22,
+    "reclamacoes_ultimo_mes": 1,
+    "saldo_medio": 859.4725496774747,
+    "analise_ia": "Cliente 12, notamos sua ausência. Podemos ajudar a resolver sua reclamação e oferecer benefícios exclusivos. Fale conosco!"
+  },
+  {
+    "id": 13,
+    "nome": "Cliente 13",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 15,
+    "reclamacoes_ultimo_mes": 3,
+    "saldo_medio": 776.2971780639172,
+    "analise_ia": "Prezado Cliente 13, notamos inatividade. Para mantê-lo conosco, precisamos entender suas necessidades. Podemos conversar?"
+  },
+  {
+    "id": 14,
+    "nome": "Cliente 14",
+    "status_atual": "Risco",
+    "dias_sem_transacao": 22,
+    "reclamacoes_ultimo_mes": 3,
+    "saldo_medio": 607.2841759174075,
+    "analise_ia": "'Cliente 14, sua conta está ativa. Deseja ajuda com algo? Fale conosco!'"
+  },
+  {
+    "id": 15,
+    "nome": "Cliente 15",
+    "status_atual": "Normal",
+    "dias_sem_transacao": 2,
+    "reclamacoes_ultimo_mes": 0,
+    "saldo_medio": 8928.430317581438,
+    "analise_ia": "Prezado(a) Cliente 15, com seu saldo e fidelidade, sugiro o Tesouro Selic para excelente liquidez e segurança."
+  },
+  {
+    "id": 16,
+    "nome": "Cliente 16",
+    "status_atual": "Normal",
+    "dias_sem_transacao": 4,
+    "reclamacoes_ultimo_mes": 0,
+    "saldo_medio": 3121.5044812364868,
+    "analise_ia": "Para você, cliente fiel, sugiro o CDB com liquidez diária: rentabilidade e segurança para seu dinheiro render."
+  },
+  {
+    "id": 17,
+    "nome": "Cliente 17",
+    "status_atual": "Normal",
+    "dias_sem_transacao": 0,
+    "reclamacoes_ultimo_mes": 0,
+    "saldo_medio": 4405.427011330205,
+    "analise_ia": "Para você, Cliente 17, recomendo o **Tesouro Selic**."
+  },
+  {
+    "id": 18,
+    "nome": "Cliente 18",
+    "status_atual": "Normal",
+    "dias_sem_transacao": 3,
+    "reclamacoes_ultimo_mes": 0,
+    "saldo_medio": 4746.240060429881,
+    "analise_ia": "Prezado Cliente 18, para você, sugiro um CDB com liquidez diária, combinando segurança e rentabilidade para seu dinheiro."
+  },
+  {
+    "id": 19,
+    "nome": "Cliente 19",
+    "status_atual": "Normal",
+    "dias_sem_transacao": 5,
+    "reclamacoes_ultimo_mes": 0,
+    "saldo_medio": 4617.032050747227,
+    "analise_ia": "Prezado Cliente 19, recomendo o **Tesouro Selic** para sua reserva de emergência, com excelente liquidez e segurança."
+  },
+  {
+    "id": 20,
+    "nome": "Cliente 20",
+    "status_atual": "Normal",
+    "dias_sem_transacao": 1,
+    "reclamacoes_ultimo_mes": 0,
+    "saldo_medio": 4348.456961475268,
+    "analise_ia": "Caro Cliente 20, considere o CDB Poupança para rentabilidade com segurança e liquidez."
+  }
+]

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Retenção de Clientes - ETL com IA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .filters {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn-all {
+            background-color: #555;
+        }
+
+        .btn-churn {
+            background-color: #d9534f;
+        }
+
+        .btn-risk {
+            background-color: #f0ad4e;
+        }
+
+        .btn-normal {
+            background-color: #5cb85c;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #004080;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .status-Churn {
+            color: #d9534f;
+            font-weight: bold;
+        }
+
+        .status-Risco {
+            color: #e68a00;
+            font-weight: bold;
+        }
+
+        .status-Normal {
+            color: #2d862d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Relatório de Análise de Churn (Powered by Gemini)</h1>
+
+        <div class="filters">
+            <button class="btn-all" onclick="filtrar('todos')">Todos</button>
+            <button class="btn-churn" onclick="filtrar('Churn')">Churn (Cancelados)</button>
+            <button class="btn-risk" onclick="filtrar('Risco')">Risco (Atenção!)</button>
+            <button class="btn-normal" onclick="filtrar('Normal')">Normal</button>
+        </div>
+
+        <table id="tabelaClientes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Status</th>
+                    <th>Recomendação da IA / Análise</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let clientesData = [];
+
+        // Carrega o JSON gerado pelo Python
+        fetch('clientes_analisados.json')
+            .then(response => response.json())
+            .then(data => {
+                clientesData = data;
+                renderizarTabela(clientesData);
+            })
+            .catch(error => console.error('Erro ao carregar JSON:', error));
+
+        function renderizarTabela(dados) {
+            const tbody = document.getElementById('corpoTabela');
+            tbody.innerHTML = '';
+
+            dados.forEach(cliente => {
+                const row = `<tr>
+                <td>${cliente.id}</td>
+                <td>${cliente.nome}</td>
+                <td class="status-${cliente.status_atual}">${cliente.status_atual}</td>
+                <td>${cliente.analise_ia}</td>
+            </tr>`;
+                tbody.innerHTML += row;
+            });
+        }
+
+        function filtrar(status) {
+            if (status === 'todos') {
+                renderizarTabela(clientesData);
+            } else {
+                const filtrados = clientesData.filter(c => c.status_atual === status);
+                renderizarTabela(filtrados);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
